@@ -104,10 +104,10 @@ export default {
     });
   },
   watch: {
-    // 监听路由变化
-    $route(to, from) {
-      this.singleOpenName = [this.$route.matched[0].name];
-    }
+    // // 监听路由变化
+    // $route(to, from) {
+    //   this.singleOpenName = [this.$route.matched[0].name];
+    // }
   },
   mounted() {
     this.singleOpenName = [this.$route.matched[0].name];

@@ -8,8 +8,14 @@ module.exports = {
     'eslint:recommended'
   ],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-console': 'off',
+    'no-debugger': 'off',
+    'no-unused-vars': 'warn',
+    'no-dupe-keys': 'warn',
+    'no-undef': 'warn',
+    'vue/no-dupe-keys': 'warn',
+    'vue/no-unused-components': 'warn',
+    'vue/no-parsing-error': [2, { 'x-invalid-end-tag': false }]
   },
   parserOptions: {
     parser: 'babel-eslint'
